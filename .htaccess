@@ -1,0 +1,59 @@
+#package: Centraleffects Framework
+#Author: Rex Bengil
+#Website: Centraleffects.com
+#Company: Centraleffects BPO
+#Version: 1.0
+
+
+# disable directory browsing -IMPORTANT, do NOT remove.
+Options -Indexes
+	 
+# protect the htaccess file
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+# disable the server signature
+ServerSignature Off
+
+# protect php.ini
+<files *.ini>
+order allow,deny
+deny from all
+</files>
+
+
+#Disallow direct access to PHP Files
+<FilesMatch "\.php$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "index?\.php$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+<ifmodule mod_rewrite.c>
+	 RewriteEngine on
+	 RewriteBase /demeter/
+	
+	 RewriteRule ^([a-zA-Z0-9\-]+)\/([a-zA-Z0-9\-]+)\/$ /demeter/index.php?page=$1&subpage=$2 [L]
+	 RewriteRule ^([a-zA-Z0-9\-]+)\/([a-zA-Z0-9\-]+)\/([a-zA-Z0-9\-\/]+)\/$ /demeter/index.php?page=$1&subpage=$2&uri=$3 [L]
+	 RewriteRule ^([a-zA-Z0-9\-]+)\/$ /demeter/index.php?page=$1 [L]
+	 
+	# RewriteCond %{HTTP_REFERER} !^$
+	# RewriteCond %{HTTP_REFERER} !^http://localhost/demeter/.*$ [NC]
+	# RewriteRule \.(gif|jpg|jpeg|bmp|zip|rar|mp3|flv|swf|xml|php|png|css|pdf)$ - [F]
+
+	#force add slash at then end of url
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_URI} !(.*)/$
+	RewriteRule ^(.*)$ /demeter/$1/ [L,R=301] 
+</ifmodule>
+
+
+
+
+
