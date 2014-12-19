@@ -1,1 +1,1 @@
-This project is an odesk inspired framework.
+This project is an odesk inspired platform
