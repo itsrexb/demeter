@@ -1,0 +1,14 @@
+F:\Rex Thesis\demeter\demeter\bin\Debug\demeter.exe
+F:\Rex Thesis\demeter\demeter\bin\Debug\demeter.pdb
+F:\Rex Thesis\demeter\demeter\bin\Debug\demeter.xml
+F:\Rex Thesis\demeter\demeter\obj\x86\Debug\WindowsApplication1.Resources.resources
+F:\Rex Thesis\demeter\demeter\obj\x86\Debug\demeter.vbproj.GenerateResource.Cache
+F:\Rex Thesis\demeter\demeter\obj\x86\Debug\demeter.exe
+F:\Rex Thesis\demeter\demeter\obj\x86\Debug\demeter.xml
+F:\Rex Thesis\demeter\demeter\obj\x86\Debug\demeter.pdb
+F:\Rex Thesis\demeter\demeter\obj\x86\Debug\WindowsApplication1.demeterclient.resources
+F:\Rex Thesis\demeter\demeter\bin\Debug\demeter.exe.manifest
+F:\Rex Thesis\demeter\demeter\bin\Debug\demeter.application
+F:\Rex Thesis\demeter\demeter\obj\x86\Debug\demeter.exe.manifest
+F:\Rex Thesis\demeter\demeter\obj\x86\Debug\demeter.application
+F:\Rex Thesis\demeter\demeter\obj\x86\Debug\WindowsApplication1.LoginForm.resources
